@@ -30,7 +30,7 @@ The new functionalities added by me are:
 
 ## Human Recognition
 The first functionality is the recognition of people and their position in the region using **YOLOv3**.
-![alt text](https://github.com/[MatteoLucchi1998]/[InterpersonalDistances]/blob/[main]/images/1.PNG?raw=true)
+![alt text](https://github.com/[MatteoLucchi1998]/[InterpersonalDistances]/blob/[main]/1.PNG?raw=true)
 
 ## Production of Bird Eye View
 By applying a prospective transformation on the **Region Of Interest** (selected with four mouse clicks) the **Bird Eye View** is produced, with horizontal and vertical ratios (obtained with three mouse clicks). Inside the Bird Eye View points are equally distributed, that means that we can claculate the distance between the position of people in the Bird Eye View.
