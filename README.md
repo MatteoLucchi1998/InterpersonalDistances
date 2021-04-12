@@ -19,6 +19,15 @@ The new functionalities added by me are:
 *Increasing accuracy for measures;
 *Production of more versatile data structures;
 
+## Project Structure
+*data: directory containing the input videos;
+*output: directory containing the output frames, organized in sub-directories named as the input video;
+*output_vid: directory containing the output videos, both Bird Eye View and ROI;
+*models: you must add yolov3.weights , you can download them here: https://pjreddie.com/media/files/yolov3.weights;
+*main.py: the main project file;
+*utills.py, plot.py: functions files;
+*heatmap.ipynb: Jupiter Notebook explaining a simple way to generate heatmaps;
+
 ## Human Recognition
 The first functionality is the recognition of people and their position in the region using **YOLOv3**.
 
@@ -44,7 +53,7 @@ That way i've been able to indicate for every frame:
 
 ## Production of Confusion Matrix
 
-# Problems and Possible Solutions
+## Problems and Possible Solutions
 The main cause of errors is the detection of humans, a solution can be the use of a different Neural Network, the re-training the current one or the use of filters.
 The second and third causes are the **Darkness** of the frames (during nighttime) and the **Irregularity of the Background**. The first can also be solved using high contrast filters, the second instead can be reduced changing the point of view of the camera.
 
