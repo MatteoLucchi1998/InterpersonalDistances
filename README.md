@@ -30,17 +30,25 @@ The new functionalities added by me are:
 
 ## Human Recognition
 The first functionality is the recognition of people and their position in the region using **YOLOv3**.
-![alt text](https://github.com/[MatteoLucchi1998]/[InterpersonalDistances]/blob/[main]/1.PNG?raw=true)
+![plot](images/1.PNG?raw=true "Example of human recognition")
 
 ## Production of Bird Eye View
 By applying a prospective transformation on the **Region Of Interest** (selected with four mouse clicks) the **Bird Eye View** is produced, with horizontal and vertical ratios (obtained with three mouse clicks). Inside the Bird Eye View points are equally distributed, that means that we can claculate the distance between the position of people in the Bird Eye View.
+![plot](images/2.PNG?raw=true "Original frame ROI")
+![plot](images/3.PNG?raw=true "Bird Eye View")
 
 ## Calculation of Interpersonal Measures
 Thanks to the Bird Eye View we can produce a **Distance Matrix**, containing the Euclidean Distance between every person in the Region of Interest.
 If the distance between two person i greater than 1.5m they'll be indicated in **green**, otherwise, if any person is closer than 1.5m to someone else they'll be colored in **red**.
+![plot](images/5.PNG?raw=true "Example of processed frame")
+
+## Production of Distance Matrix
+![plot](images/4.PNG?raw=true "Example of Distance Matrix")
 
 ## Ground Truth
 To appurate the accuracy of the measures some videos have been recorded, with calibration measures taken on the site.
+![plot](images/6.PNG?raw=true "Example of processed frame")
+
 That way i've been able to indicate for every frame:
 * Time of the day;
 * Type of Background (Homogeneous or Irregular);
@@ -52,7 +60,12 @@ That way i've been able to indicate for every frame:
 * Number of People wrongly marked as Safe;
 * Number of People wrongly marked as at Risk;
 
-## Production of Confusion Matrix
+## Heatmaps
+Using the Bird Eye Views it's possible to create two kind of heatmaps.
+An heatmap which indicates the regions of the ROI where people most frequently walk:
+![plot](images/8.PNG?raw=true "Example of simple Heatmap")
+Or a heatmap where we show the region of the ROI where most of the people have been categorized as "At Risk":
+![plot](images/9.PNG?raw=true "Example of processed frame")
 
 ## Problems and Possible Solutions
 The main cause of errors is the detection of humans, a solution can be the use of a different Neural Network, the re-training the current one or the use of filters.
